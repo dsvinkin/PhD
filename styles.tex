@@ -12,7 +12,7 @@
 
 %%% Библиография %%%
 \makeatletter
-\bibliographystyle{ugost2008ns}	% Оформляем библиографию в соответствии с ГОСТ 7.0.5
+\bibliographystyle{my_ugost2008ns.bst}	% Оформляем библиографию в соответствии с ГОСТ 7.0.5
 \renewcommand{\@biblabel}[1]{#1.}	% Заменяем библиографию с квадратных скобок на точку:
 \makeatother
 
@@ -30,3 +30,5 @@
 
 %%% Оглавление %%%
 \renewcommand{\cftchapdotsep}{\cftdotsep}
+
+\newcommand{\rmn}[1]{{\mathrm{#1}}}
