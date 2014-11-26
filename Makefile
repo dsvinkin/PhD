@@ -8,6 +8,5 @@ all:
 	$(BIBTEX) $(PROJECT) 
 	$(BUILDTEX)
 	$(BUILDTEX)
-
 clean:
 	rm -f *.aux *.bbl *.blg *.log $(PROJECT).pdf 
