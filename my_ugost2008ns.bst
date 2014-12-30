@@ -2252,7 +2252,8 @@ FUNCTION {author.title.sort}
       if$
     }
     {
-      author num.names$ #4 <
+       author num.names$ #100 <
+      %author num.names$ #4 <    Changed by D. Svinkin
         {author sort.format.names }
         {title sort.format.title}
       if$
