@@ -2035,7 +2035,6 @@ MACRO {oct} {""}
 MACRO {nov} {""}
 MACRO {dec} {""}
 
-
 MACRO {aap}{"Astron.~Astrophys."}
 MACRO {aaps}{"Astron.~Astrophys.~Suppl.~Ser."}
 MACRO {aasup}{"Astron.~Astrophys.~Suppl.~Ser."}
@@ -2054,7 +2053,7 @@ MACRO {apl} {"Appl. Phys. Lett."}
 MACRO {app} {"Astroparticle Phys."}
 MACRO {apj} {"Astrophys.~J."}
 MACRO {apjl} {"Astrophys.~J."}
-MACRO {apjsup} {"Astrophys. J. Suppl."}
+MACRO {apjsup} {"Astrophys.~J. Suppl."}
 MACRO {apjs} {"Astrophys.~J. Suppl."}
 MACRO {apss} {"Astrophys. Space Sci."}
 MACRO {araa} {"Ann. Rev. Astron. Astrophys."}
@@ -2064,6 +2063,8 @@ MACRO {cmp} {"Comm. Math. Phys."}
 MACRO {cpam} {"Commun. Pure Appl. Math."}
 MACRO {cppcf} {"Comm. Plasma Phys. \ Controlled Fusion"}
 MACRO {cpc} {"Comp. Phys. Comm."}
+MACRO {cjaa} {"Chin.~J.~Astron.~Astrophys."}
+
 MACRO {cqg} {"Class. Quant. Grav."}
 MACRO {cra} {"C. R. Acad. Sci. A"}
 MACRO {fed} {"Fusion Eng. \ Design"}
@@ -2105,6 +2106,7 @@ MACRO {npbpc} {"Nucl. Phys. B (Proc. Suppl.)"}
 MACRO {inc} {"Nuovo Cimento"}
 MACRO {nc} {"Nuovo Cimento"}
 MACRO {pf} {"Phys. Fluids"}
+MACRO {pasj} {"Publications of the Astronomical Society of Japan"}
 MACRO {pfa} {"Phys. Fluids A: Fluid Dyn."}
 MACRO {pfb} {"Phys. Fluids B: Plasma Phys."}
 MACRO {pl} {"Phys. Lett."}
@@ -2137,7 +2139,7 @@ MACRO {sptp} {"Sov. Phys.--Tech. Phys."}
 MACRO {spu} {"Sov. Phys.--Uspekhi"}
 MACRO {ssr} {"Space~Sci.~Rev."}
 MACRO {st} {"Sky and Telesc."}
-
+MACRO {solphys} {"Sol.~Phys."}
 MACRO {appopt} {"Appl. Opt."}
 MACRO {bell}   {"Bell Syst. Tech. J."}
 MACRO {ell}    {"Electron. Lett."}
@@ -2167,6 +2169,8 @@ MACRO {sse} {"Solid-State Electron."}
 MACRO {pss} {"Phys. Sol. State"}
 MACRO {sst} {"Semicond. Sci. Tech."}
 MACRO {nl}  {"Nano Lett."}
+
+MACRO {planss} {"Planet.~Space~Sci."}
 
 READ
 
@@ -2339,7 +2343,7 @@ FUNCTION {presort}%#2
 
 ITERATE {presort}
 
-SORT
+%SORT
 
 
 STRINGS { longest.label last.label next.extra }
@@ -2395,7 +2399,7 @@ FUNCTION {bib.sort.order}
 
 ITERATE {bib.sort.order}
 
-SORT
+%SORT
 
 FUNCTION {begin.bib}
 { "\begin{thebibliography}{"  longest.label  * "}" * write$ newline$
