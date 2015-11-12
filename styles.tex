@@ -1,6 +1,14 @@
 %%% Макет страницы %%%
 \geometry{a4paper,top=2cm,bottom=2cm,left=3cm,right=1cm}
 
+\titleformat{\chapter}[display]
+  {\normalfont\Large\filcenter\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\LARGE}
+\titlespacing*{\chapter}
+  {0pt}{30pt}{20pt}
+
+% см. http://tex.stackexchange.com/questions/134031/how-to-adjust-the-size-and-placement-of-chapter-heading-in-report-class
+% и http://tex.stackexchange.com/questions/59726/change-size-of-section-subsection-subsubsection-paragraph-and-subparagraph-ti
+
 %%% Кодировки и шрифты %%%
 %\renewcommand{\rmdefault}{ftm} % Включаем Times New Roman
 
@@ -12,14 +20,14 @@
 
 %%% Библиография %%%
 \makeatletter
-\bibliographystyle{my_ugost2008ns}	% Оформляем библиографию в соответствии с ГОСТ 7.0.5
+\bibliographystyle{ugost2008ns_v1.bst}	% Оформляем библиографию в соответствии с ГОСТ 7.0.5
 %\bibliographystyle{utf8gost705u}
 %\bibliographystyle{ugost2008}
 \renewcommand{\@biblabel}[1]{#1.}	% Заменяем библиографию с квадратных скобок на точку:
 \makeatother
 
 %%% Изображения %%%
-\graphicspath{{images/}} % Пути к изображениям
+\graphicspath{{img_part1/}{img_part2/}{img_part3/}{img_part4/}{img_part5/}} % Пути к изображениям
 
 %%% Цвета гиперссылок %%%
 \definecolor{linkcolor}{rgb}{0.9,0,0}
@@ -33,4 +41,10 @@
 %%% Оглавление %%%
 \renewcommand{\cftchapdotsep}{\cftdotsep}
 
+
+\newcommand{\kws}{\textit{KW}\ }
 \newcommand{\rmn}[1]{{\mathrm{#1}}}
+\newcommand\fdg{\mbox{$.\!\!^\circ$}}%
+\newcommand\farcm{\mbox{$.\mkern-4mu^\prime$}}%
+\newcommand\farcs{\mbox{$.\!\!^{\prime\prime}$}}%
+

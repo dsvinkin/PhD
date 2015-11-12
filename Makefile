@@ -9,4 +9,4 @@ all:
 	$(BUILDTEX)
 	$(BUILDTEX)
 clean:
-	rm -f *.aux *.bbl *.blg *.log $(PROJECT).pdf 
+	rm -f *.aux *.bbl *.blg *.log *.out $(PROJECT).pdf 

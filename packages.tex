@@ -25,8 +25,8 @@
 %\usepackage{multirow,makecell,array}	% Улучшенное форматирование таблиц
 
 %%% Общее форматирование
-\usepackage[singlelinecheck=off,center]{caption}	% Многострочные подписи
-\usepackage{soul}					% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
+\usepackage[singlelinecheck=off]{caption}	% Многострочные подписи
+%\usepackage{soul}					% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
 
 %%% Библиография %%%
 \usepackage[numbers]{natbib}
@@ -41,6 +41,8 @@
 %            backend=biber]{biblatex}
 
 
+\usepackage{placeins}
+
 %%% Гиперссылки %%%
 \usepackage[linktocpage=true,plainpages=false,pdfpagelabels=false,unicode=true]{hyperref}
 
@@ -50,3 +52,5 @@
 
 %%% Оглавление %%%
 \usepackage{tocloft}
+
+\usepackage{titlesec}
