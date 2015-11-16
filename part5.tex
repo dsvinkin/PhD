@@ -402,12 +402,15 @@ to be submitted to ApJS
 \end{figure}
 
 \begin{figure}
-	\begin{center}
-		\subfigure[]{\label{falpha}\includegraphics[height=0.45\textwidth]{gDistAlpha_ru.eps}}
-		\subfigure[]{\label{fEp}\includegraphics[height=0.45\textwidth]{gDistEp_ru.eps}}
-	\end{center}
+	\begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gDistAlpha_ru.eps} \\ а)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gDistEp_ru.eps} \\ б)}
+	\end{minipage}
     \caption{
-    Распределение $\alpha$~\subref{falpha} и $E_\rmn{p}$~\subref{fEp}, полученных 
+    Распределение $\alpha$~(а) и $E_\rmn{p}$~(б), полученных 
     в результате моделирования интегральных спектров. Распределение для каждой модели
     показано отдельно.
     \label{fig:par_dist} }
@@ -415,12 +418,15 @@ to be submitted to ApJS
 
 
 \begin{figure}
-	\begin{center}
-		\subfigure[]{\label{ffl}\includegraphics[height=0.45\textwidth]{gDistS_ru.eps}}
-		\subfigure[]{\label{fpf}\includegraphics[height=0.45\textwidth]{gDistPF_ru.eps}}
-	\end{center}
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gDistS_ru.eps} \\ а)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gDistPF_ru.eps} \\ б)}
+	\end{minipage}
 \caption{
-    Распределение интегральных~\subref{ffl} и пиковых энергетических потоков~\subref{fpf}
+    Распределение интегральных~(а) и пиковых энергетических потоков~(б)
     Серым на каждой панели показано суммарное по всем моделям распределение для 216
     многоканальных спектров, распределения для каждой модели показаны отдельно. 
     Штрихпунктирной линией показаны распределения для 78 трёхканальных спектров.
@@ -428,44 +434,52 @@ to be submitted to ApJS
 \end{figure}
 
 \begin{figure}
-	\begin{center}
-		\subfigure[]{\label{fEpTypeII}\includegraphics[height=0.45\textwidth]{gEpvsT50TypesII_ru.eps}}
-		\subfigure[]{\label{fEpEEip}\includegraphics[height=0.45\textwidth]{gEpvsT50ipEE_ru.eps}}
-	\end{center}
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gEpvsT50TypesII_ru.eps} \\ а)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gEpvsT50ipEE_ru.eps} \\ б)}
+	\end{minipage}
+
 \caption{
     Соотношение $E_\rmn{p}$ и $T_{50}$ (только для модели CPL).
-    На панели~\subref{fEpTypeII} показаны всплески типа~I (серые точки), типа~II (красные треугольники)
+    На панели~(а) показаны всплески типа~I (серые точки), типа~II (красные треугольники)
     и всплески неопределённого типа, I или~II (синие окружности).
-    На панели~\subref{fEpEEip} показаны всплески типа~I с EE (заполненные красные звёзды)
+    На панели~(б) показаны всплески типа~I с EE (заполненные красные звёзды)
     и всплески неопределённого типа Iee или~II (пустые красные звёзды)
     Для всплесков типа~I ошибки не показаны. 
     \label{fig:EpT50}}
 \end{figure}
 
 \begin{figure}
-	\begin{center}
-		\begin{minipage}[t]{1\textwidth}
-		\subfigure[]{\label{fig:EpFluence}\includegraphics[width=0.5\textwidth]{gEpvsFl_ru.eps}}
-		\subfigure[]{\label{fig:EpFluence_EE}\includegraphics[width=0.5\textwidth]{gEpvsFlEE_ru.eps}}
-        %\vspace{-0.5cm}
-		\end{minipage}
-		\begin{minipage}[t]{1\textwidth}
-		\subfigure[]{\label{fig:EpPF}\includegraphics[width=0.5\textwidth]{gEpvsPF_ru.eps}}
-		\subfigure[]{\label{fig:EpPF_EE}\includegraphics[width=0.5\textwidth]{gEpvsPFEE_ru.eps}}
-        %\vspace{-0.5cm}
-		\end{minipage}
-	\end{center}
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gEpvsFl_ru.eps} \\ а)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gEpvsFlEE_ru.eps} \\ б)}
+	\end{minipage}
+    \vfill
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gEpvsPF_ru.eps} \\ в)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{gEpvsPFEE_ru.eps} \\ г)}
+	\end{minipage}
+    
 \caption{
     Соотношение $E_\rmn{p}$ с $S$ и $F_\rmn{peak}$ для всплесков, описываемых моделью CPL.
-    На панели~\subref{fig:EpFluence} показано соотношение $E_\rmn{p}$ и $S$ для
+    На панели~(а) показано соотношение $E_\rmn{p}$ и $S$ для
     всплесков типа~I с многоканальными спектрами (чёрные точки); 
     всплесков типа~I с трёхканальными спектрами (красные точки); 
     всплесков неопределённого типа (пустые точки), для обоих типов спектров;
     и для всплесков типа~II (треугольники). 
-    На панели~\subref{fig:EpFluence_EE} показаны всплески типов Iee (заполненные звёзды) и~Iee/II (пустые звёзды);
+    На панели~(б) показаны всплески типов Iee (заполненные звёзды) и~Iee/II (пустые звёзды);
     остальные всплески из набора показаны серым.
-    На панели~\subref{fig:EpPF} показано соотношение $E_\rmn{p}$ и $F_\rmn{peak}$ 
-    для того же набора всплесков. Для всплесков типов~I и~I/II ошибки не показаны.
+    На панелях~(в) и~(г) показаны соотношение $E_\rmn{p}$ и $F_\rmn{peak}$ 
+    для тех же наборов всплесков. Для всплесков типов~I и~I/II ошибки не показаны.
     Кандидаты в GF в близких галактиках обозначены ромбами. Звёздами показаны всплески с измеренным $z$.
     Пунктирная линия соответствует степенной аппроксимации соотношений для всплесков типа~I,
     в обоих случаях индекс близок к $0.5$.
@@ -475,16 +489,18 @@ to be submitted to ApJS
 \end{figure}
 
 \begin{figure}
-	\begin{center}
-		\subfigure[]{\label{fig:logNlogS}\includegraphics[height=0.45\textwidth]{glogNlogS_ru.eps}}
-		\subfigure[]{\label{fig:logNlogPF}\includegraphics[height=0.45\textwidth]{glogNlogPF_ru.eps}}
-	\end{center}
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{glogNlogS_ru.eps} \\ а)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.5\textwidth}
+		\center{\includegraphics[width=1\textwidth]{glogNlogPF_ru.eps} \\ б)}
+	\end{minipage}
 \caption{
-    Интегральные распределения $\log N$--$\log S$~\subref{fig:logNlogS} и
-    $\log N$--$\log F_\rmn{peak}$~\subref{fig:logNlogPF}.
+    Интегральные распределения $\log N$--$\log S$~(а) и $\log N$--$\log F_\rmn{peak}$~(б).
     Пунктирная линия обозначает степенное распределение с показателем степени $-3/2$,
     ожидаемое для однородного расположения источников всплесков в Евклидовом пространстве.
-    Штриховая линия на панели~\subref{fig:logNlogPF} показывает степенную аппроксимацию
+    Штриховая линия на панели~(b) показывает степенную аппроксимацию
     распределения $\log N$--$\log F_\rmn{peak}$ в диапазоне  
     $(0.2\textrm{--}1.5)\times 10^{-4}$~эрг~см$^{-2}$~с$^{-1}$, полученный степенной индекс
     равен $-1.16\pm0.01$ ($\chi^2_r = 1.2$).
